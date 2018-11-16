@@ -1,0 +1,6 @@
+<p>
+  Hello <span *ngFor="let o of objects">my {{o}} </span>
+</p>
+
+<input [(ngModel)]="noun" type="text"/>
+<button (click)="addNoun(noun)">Add</button>
