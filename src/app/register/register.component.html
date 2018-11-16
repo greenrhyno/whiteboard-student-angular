@@ -1,3 +1,19 @@
-<p>
-  register works!
-</p>
+<h3> Register </h3>
+
+<div class="form-group">
+  <label>Username</label>
+  <input type="text" placeholder="johndoe11" [(ngModel)]="usernameFld"/>
+</div>
+<div class="form-group">
+  <label>Password</label>
+  <input type="text" placeholder="*******" [(ngModel)]="passwordFld"/>
+</div>
+<div class="form-group">
+  <label>First Name</label>
+  <input type="text" placeholder="johndoe11" [(ngModel)]="firstNameFld"/>
+</div>
+<div class="form-group">
+  <label>Password</label>
+  <input type="text" placeholder="*******" [(ngModel)]="lastNameFld"/>
+</div>
+<button class="btn btn-dark" (click)="register(usernameFld, passwordFld, firstNameFld, lastNameFld)">Register</button>
