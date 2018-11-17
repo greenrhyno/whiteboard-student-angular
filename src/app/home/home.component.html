@@ -1,6 +1,18 @@
-<h1> Hello space cowboy... </h1>
-<app-hello-world></app-hello-world>
+<div class="container-fluid" id="heading-bkgrd">
+  <h2 id="main_heading"> Welcome to Whiteboard {{ext}} </h2>
 
-<br/>
-<!--<a routerLink="/login">Login</a>-->
-<!--<a routerLink="/register">Register</a>-->
+  <nav class="row">
+    <!--<div class="col-6">-->
+    <a class="nav-link" routerLink="/login">Login</a>
+    <!--</div>-->
+    <!--<div class="col-6">-->
+    <a class="nav-link" routerLink="/register">Register</a>
+    <!--</div>-->
+    <a id="logout" class="nav-link" routerLink="/" (click)="logout()">Logout</a>
+  </nav>
+</div>
+
+
+  <router-outlet></router-outlet>
+
+

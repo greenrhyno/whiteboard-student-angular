@@ -1,3 +1,20 @@
-<p>
-  course-grid works!
-</p>
+<div id="header-container" class="fluid-container">
+
+  <h2 id="course-grid-header">Course Grid</h2>
+
+</div>
+
+<div class="container-fluid">
+  <div class="card-deck">
+
+    <div *ngFor="let course of courses" class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">{{course.title}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{course.author}}</h6>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <button  href="#" routerLink="course/{{course.id}}}" class="btn btn-block btn-warning">Card link</button>
+      </div>
+    </div>
+
+  </div>
+</div>
