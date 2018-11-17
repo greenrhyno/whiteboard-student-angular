@@ -4,11 +4,11 @@
 
   <div class="form-group">
     <label>Username</label>
-    <input type="text" placeholder="johndoe11" [(ngModel)]="usernameFld"/>
+    <input class="form-control" type="text" placeholder="johndoe11" [(ngModel)]="usernameFld"/>
   </div>
   <div class="form-group">
     <label>Password</label>
-    <input type="text" placeholder="*******" [(ngModel)]="passwordFld"/>
+    <input class="form-control" type="text" placeholder="*******" [(ngModel)]="passwordFld"/>
   </div>
   <button class="btn btn-dark" (click)="login(usernameFld, passwordFld)">Login</button>
 

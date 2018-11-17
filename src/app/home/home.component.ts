@@ -10,7 +10,7 @@ export class HomeComponent implements OnInit {
 
   currentStudent;
   loggedIn = false;
-  ext = 'for Students!';
+  ext = '';
 
   constructor(private studentService: StudentServiceClient) { }
 
@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
 
   logout() {
     this.currentStudent = null;
-    this.ext = 'for Students!';
+    this.ext = '';
     this.studentService.logout();
   }
 

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {CourseServiceClient} from '../services/CourseServiceClient';
-import {StudentServiceClient} from '../services/StudentServiceClient';
 import {Router} from '@angular/router';
 
 @Component({
@@ -15,7 +14,12 @@ export class CourseGridComponent implements OnInit {
   constructor(private courseService: CourseServiceClient, private router: Router) { }
 
   ngOnInit() {
-    this.courses = this.courseService.getAllCourses();
+    this.courseService.getAllCourses().then(r => this.courses = r);
+  }
+
+  routeToViewer(id) {
+    console.log('Routing to View Course #' + id);
+    this.router.navigate(['course', id]);
   }
 
 }

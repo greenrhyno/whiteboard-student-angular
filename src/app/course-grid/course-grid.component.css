@@ -6,3 +6,11 @@
 #header-container {
   background-color: rgba(180, 10, 28, 0.87);
 }
+
+.faded {
+  color: #5c5c5c;
+}
+
+.card {
+  background-color: darkgrey;
+}

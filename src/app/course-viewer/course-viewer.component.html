@@ -1,3 +1,13 @@
-<p>
-  course-viewer works!
-</p>
+<div class="sidenav">
+  <h3 id="course-title">{{course.title}}</h3>
+  <a *ngFor="let mod of course.modules" class="nav-pills"
+        (click)="selectMod(mod.id)">{{mod.title}}</a>
+</div>
+
+<div id="main-window" class="calculated-width container-fluid">
+
+  <p>
+    Title: {{course.title}}
+  </p>
+
+</div>
