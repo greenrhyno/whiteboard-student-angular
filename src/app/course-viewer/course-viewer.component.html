@@ -1,13 +1,15 @@
-<div class="sidenav">
-  <h3 id="course-title">{{course.title}}</h3>
-  <a *ngFor="let mod of course.modules" class="nav-pills"
-        (click)="selectMod(mod.id)">{{mod.title}}</a>
-</div>
+<app-module-list></app-module-list>
 
+<div id="lesson-window" class="calculated-width container-fluid">
+  <app-lesson-tabs></app-lesson-tabs>
+</div>
 <div id="main-window" class="calculated-width container-fluid">
 
-  <p>
-    Title: {{course.title}}
-  </p>
+  <!--<p>-->
+    <!--Title: {{course.title}}-->
+  <!--</p>-->
+
+
+  <router-outlet></router-outlet>
 
 </div>

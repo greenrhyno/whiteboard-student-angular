@@ -20,6 +20,7 @@ import { LessonTabsComponent } from './lesson-tabs/lesson-tabs.component';
 import { TopicPillsComponent } from './topic-pills/topic-pills.component';
 import { WidgetListComponent } from './widget-list/widget-list.component';
 import { CourseViewerComponent } from './course-viewer/course-viewer.component';
+import {Ng4LoadingSpinnerModule} from 'ng4-loading-spinner';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { CourseViewerComponent } from './course-viewer/course-viewer.component';
   imports: [
     BrowserModule,
     FormsModule,
-    routing
+    routing,
+    Ng4LoadingSpinnerModule.forRoot()
   ],
   providers: [
     StudentServiceClient,

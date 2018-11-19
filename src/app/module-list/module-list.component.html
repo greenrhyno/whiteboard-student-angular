@@ -1,3 +1,7 @@
-<p>
-  module-list works!
-</p>
+
+<div class="sidenav">
+  <!--<h3 id="course-title">{{course.title}}</h3>-->
+  <a *ngFor="let mod of modules"
+     class="{{activate(mod.id)}}"
+     (click)="selectMod(mod.id)">{{mod.title}}</a>
+</div>

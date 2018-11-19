@@ -1,3 +1,12 @@
-<p>
-  lesson-tabs works!
-</p>
+
+<div class="lesson-tabs-container">
+<ul class="nav nav-tabs">
+  <li class="nav-item disabled">Lessons:</li>
+  <li *ngFor="let l of lessons" class="nav-item lesson-tab">
+    <a class="{{activate(l.id)}}"
+       (click)="selectLesson(l.id)">
+      {{l.title}}
+    </a>
+  </li>
+</ul>
+</div>

@@ -1,5 +1,5 @@
 #main_heading {
-  align: center;
+  text-overflow: ellipsis;
   color: white;
 }
 
