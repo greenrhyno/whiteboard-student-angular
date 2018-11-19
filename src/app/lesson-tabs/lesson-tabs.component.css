@@ -1,8 +1,18 @@
 .lesson-tab {
-  color: black;
+  color: #403f40;
   font-size: x-large;
 }
 
 .nav-tabs {
   font-size: x-large;
+}
+.overflow {
+  overflow-x: scroll;
+  overflow-scrolling: auto;
+}
+
+#lesson-header {
+  color: white;
+  padding-top: 20px;
+  vert-align: bottom;
 }

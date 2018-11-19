@@ -22,13 +22,10 @@ export class CourseViewerComponent implements OnInit {
 
   ngOnInit() {
     this.activatedRoute.params.subscribe( params => {
-      console.log('params id: ' + params.courseId);
       // this.spinnerService.show();
       this.courseService.findCourseById(params.courseId).then(r => {
         const foundCourse = r;
         this.course = foundCourse;
-        console.log('found: ');
-        console.log(foundCourse);
         // this.spinnerService.hide();
       });
       // this.course = foundCourse;

@@ -1,7 +1,7 @@
 
 <div class="lesson-tabs-container">
-<ul class="nav nav-tabs">
-  <li class="nav-item disabled">Lessons:</li>
+<ul class="nav nav-tabs overflow">
+  <li class="nav-item"><a id="lesson-header">Lessons:</a> </li>
   <li *ngFor="let l of lessons" class="nav-item lesson-tab">
     <a class="{{activate(l.id)}}"
        (click)="selectLesson(l.id)">

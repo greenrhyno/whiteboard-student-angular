@@ -1,6 +1,6 @@
 
 <div class="sidenav">
-  <!--<h3 id="course-title">{{course.title}}</h3>-->
+  <a id="module-title"> Modules:</a>
   <a *ngFor="let mod of modules"
      class="{{activate(mod.id)}}"
      (click)="selectMod(mod.id)">{{mod.title}}</a>

@@ -1,3 +1,47 @@
-<p>
-  widget-list works!
-</p>
+
+<div id="widget-container" class="container-fluid">
+  <!--<h1>Widgets</h1>-->
+  <div class="container-fluid row" *ngFor="let wid of widgets">
+
+    <!--Heading Widget-->
+    <div *ngIf="wid.widType === 'HEADING'">
+      <h1 *ngIf="wid.headingSize === 1">{{wid.heading}}</h1>
+      <h2 *ngIf="wid.headingSize === 2">{{wid.heading}}</h2>
+      <h3 *ngIf="wid.headingSize === 3">{{wid.heading}}</h3>
+      <h4 *ngIf="wid.headingSize === 4">{{wid.heading}}</h4>
+      <h5 *ngIf="wid.headingSize === 5">{{wid.heading}}</h5>
+      <h6 *ngIf="wid.headingSize === 6">{{wid.heading}}</h6>
+    </div>
+
+    <!--Paragraph Widget-->
+    <div *ngIf="wid.widType === 'PARAGRAPH'">
+    <p>{{wid.text}}</p>
+  </div>
+
+    <!--List Widget-->
+    <div *ngIf="wid.widType === 'LIST'">
+      <ol *ngIf="wid.ordered; else unordered">
+        {{wid.title}}
+        <li *ngFor="let s of splitString(wid.text)"> {{s}}</li>
+      </ol>
+      <ng-template #unordered>
+        <ul>
+          {{wid.title}}
+          <li *ngFor="let s of splitString(wid.text)"> {{s}}</li>
+        </ul>
+      </ng-template>
+    </div>
+
+    <!--Image Widget-->
+    <div *ngIf="wid.widType === 'IMAGE'">
+      <img src="{{wid.src}}"/>
+    </div>
+
+    <!--Link Widget-->
+    <div *ngIf="wid.widType === 'LINK'">
+      <a href="{{wid.url}}">{{wid.text}}</a>
+    </div>
+
+  </div>
+
+</div>

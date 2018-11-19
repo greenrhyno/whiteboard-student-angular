@@ -35,3 +35,7 @@
 .active {
   background-color: #413f41;
 }
+
+#module-title {
+  color: white;
+}

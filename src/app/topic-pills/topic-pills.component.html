@@ -1,3 +1,9 @@
-<p>
-  topic-pills works!
-</p>
+<ul class="nav nav-tabs overflow">
+  <li class=""><a class="topic-tab disabled">Topics:</a> </li>
+  <li *ngFor="let t of topics" class="nav-item topic-tab">
+    <a class="{{activate(t.id)}}"
+       (click)="selectTopic(t.id)">
+      {{t.title}}
+    </a>
+  </li>
+</ul>

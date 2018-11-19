@@ -3,13 +3,20 @@
 <div id="lesson-window" class="calculated-width container-fluid">
   <app-lesson-tabs></app-lesson-tabs>
 </div>
+
+<div id="topic-window" class="calculated-width container-fluid">
+  <!--<app-topic-pills></app-topic-pills>-->
+</div>
+
 <div id="main-window" class="calculated-width container-fluid">
+  <br/>
 
-  <!--<p>-->
-    <!--Title: {{course.title}}-->
-  <!--</p>-->
+  <app-topic-pills></app-topic-pills>
+  <br/>
+
+  <app-widget-list></app-widget-list>
 
 
-  <router-outlet></router-outlet>
+  <!--<router-outlet></router-outlet>-->
 
 </div>

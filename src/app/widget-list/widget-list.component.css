@@ -1,0 +1,5 @@
+#widget-container {
+  background-color: #dbdbdb;
+  overflow-scrolling: auto;
+  overflow-y: scroll;
+}
