@@ -1,17 +1,22 @@
-<div class="container-fluid" id="heading-bkgrd">
-  <h2 id="main_heading"> Welcome to {{ext}}</h2>
 
-  <nav class="row">
+<div class="row container-fluid" id="heading-bkgrd">
+  <div class="col-sm-6 col-xs-9">
+    <h2 id="main_heading"> Welcome to {{ext}}</h2>
+  </div>
+
+  <div class="col-sm-6 col-xs-3">
+  <ul id="main-nav" class="nav navbar-right">
     <!--<div class="col-6">-->
-    <a class="nav-link" routerLink="/login">Login</a>
+    <li><a class="nav-link" routerLink="/login">Login</a></li>
     <!--</div>-->
     <!--<div class="col-6">-->
-    <a class="nav-link" routerLink="/register">Register</a>
+    <li><a class="nav-link" routerLink="/register">Register</a></li>
     <!--</div>-->
-    <a id="logout" class="nav-link" routerLink="/" (click)="logout()">Logout</a>
-  </nav>
+    <li><a id="logout" class="nav-link" routerLink="/" (click)="logout()">Logout</a></li>
+  </ul>
+  </div>
+
 </div>
-
 
   <router-outlet></router-outlet>
 

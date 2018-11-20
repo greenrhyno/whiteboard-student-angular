@@ -5,10 +5,16 @@
 
 #heading-bkgrd {
   background-color: #317cf6;
-  height: 90px;
+  /*height: 90px;*/
   overflow-y: scroll;
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 .nav-link {
   color: white;
+}
+
+#main-nav {
+  float: right;
 }

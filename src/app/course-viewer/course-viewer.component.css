@@ -1,7 +1,7 @@
 .calculated-width {
-  width: -webkit-calc(100% - 140px);
-  width:    -moz-calc(100% - 140px);
-  width:         calc(100% - 140px);
+  width: -webkit-calc(100% - 155px);
+  width:    -moz-calc(100% - 155px);
+  width:         calc(100% - 155px);
   height: -webkit-calc(100% - 90px);
   height:    -moz-calc(100% - 90px);
   height:         calc(100% - 90px);
@@ -11,10 +11,6 @@ body {
   background-color: rgba(180,10,28,0.87);
 }
 
- #lesson-tab-container {
-   /*background-color: #e6c32a;*/
- }
-
 #course-title {
   color: white;
   text-align: center;
@@ -23,17 +19,21 @@ body {
 
 /* Main window */
 #main-window {
-  top: 140px;
+  /*top: 140px;*/
   background-color: rgba(192, 0, 0, 0.78);
- position: fixed;
-  left: 140px;
+ /*position: fixed;*/
+  /*left: 140px;*/
+  margin-left: 155px;
+  margin-right: 0px;
 
 }
 #lesson-window {
-  top: 90px;
+  /*top: 90px;*/
   background-color: #ffc529;
-  position: fixed;
-  left: 140px;
+  position: static;
+  /*left: 140px;*/
+  margin-left: 155px;
+  margin-right: 0px;
 
 }
 
